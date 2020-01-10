@@ -1,0 +1,221 @@
+@import url("https://use.fontawesome.com/releases/v5.6.3/css/all.css");
+
+.esc-calculator{
+    position: relative;
+    overflow: hidden;
+}
+.esc-calculator .btn-xl {
+  padding: 1.25rem 2.5rem;
+}
+
+.esc-calculator .content-section {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+}
+
+.esc-calculator .content-section-heading h2 {
+  font-size: 3rem;
+}
+
+.esc-calculator .content-section-heading h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.esc-calculator .text-faded {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.esc-calculator .scroll-to-top {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  display: none;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: white;
+  background: rgba(52, 58, 64, 0.5);
+  line-height: 45px;
+}
+
+.esc-calculator .scroll-to-top:focus, .esc-calculator .scroll-to-top:hover {
+  color: white;
+}
+
+.esc-calculator .scroll-to-top:hover {
+  background: #343a40;
+}
+
+.esc-calculator .scroll-to-top i {
+  font-weight: 800;
+}
+
+/* Side Menu */
+#sidebar-wrapper {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  min-width: 250px;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  background: #1D809F;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.esc-calculator .sidebar-nav {
+  position: absolute !important;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.esc-calculator .sidebar-nav li.sidebar-nav-item a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 15px;
+}
+
+.esc-calculator .sidebar-nav li a:hover {
+  text-decoration: none;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.esc-calculator .sidebar-nav li a:active,
+.esc-calculator .sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.esc-calculator .sidebar-nav > .sidebar-brand {
+  font-size: 1.2rem;
+  background: rgba(52, 58, 64, 0.1);
+  height: 80px;
+  line-height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
+
+.esc-calculator .sidebar-nav > .sidebar-brand a {
+  color: #fff;
+}
+
+.esc-calculator .sidebar-nav > .sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+
+#sidebar-wrapper.active {
+  right: 100%;
+  width: 100%;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.esc-calculator .side-menu-toggle {
+  position: absolute;
+  right: 75px;
+  top: 15px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: #fff;
+  background: rgba(52, 58, 64, 0.5);
+  line-height: 50px;
+  z-index: 999;
+  display: block;
+}
+.esc-calculator .result-toggle {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: #fff;
+  background: rgba(52, 58, 64, 0.5);
+  line-height: 50px;
+  z-index: 999;
+}
+
+.esc-calculator .menu-brand {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: #fff;
+  background: rgba(52, 58, 64, 0.5);
+  line-height: 50px;
+  z-index: 999;
+}
+
+.esc-calculator .menu-toggle:focus, .esc-calculator .menu-toggle:hover {
+  color: #fff;
+}
+
+.esc-calculator .menu-toggle:hover {
+  background: #343a40;
+}
+
+.esc-calculator a {
+  color: #1D809F;
+}
+
+.esc-calculator a:hover, .esc-calculator a:focus, .esc-calculator a:active {
+  color: #155d74;
+}
+
+.esc-calculator .btn-primary {
+  background-color: #1D809F !important;
+  border-color: #1D809F !important;
+  color: #fff !important;
+}
+
+.esc-calculator .btn-primary:hover, .esc-calculator .btn-primary:focus, .esc-calculator .btn-primary:active {
+  background-color: #155d74 !important;
+  border-color: #155d74 !important;
+}
+
+.esc-calculator .btn-secondary {
+  background-color: #ecb807 !important;
+  border-color: #ecb807 !important;
+  color: #fff !important;
+}
+
+.esc-calculator .btn-secondary:hover, .esc-calculator .btn-secondary:focus, .esc-calculator .btn-secondary:active {
+  background-color: #ba9106 !important;
+  border-color: #ba9106 !important;
+}
+
+.esc-calculator .btn-dark {
+  color: #fff !important;
+}
+
+.esc-calculator .btn {
+  -webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+}
+
+.esc-calculator .bg-primary {
+  background-color: #1D809F !important;
+}
+
+.esc-calculator .text-primary {
+  color: #1D809F !important;
+}
+
+.esc-calculator .text-secondary {
+  color: #ecb807 !important;
+}
