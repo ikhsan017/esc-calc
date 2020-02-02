@@ -13,8 +13,9 @@
  */
 $escPath   = plugin_dir_path(__FILE__);
 $escUrl    = plugins_url() . '/esc-calculator/';
+$mapApiKey = 'AIzaSyDrghmFkk775QglqoFvaLGqI-36oURYNqQ';
 
-$registerAssets = function () use ($escPath, $escUrl) {
+$registerAssets = function () use ($mapApiKey, $escUrl) {
     /** prepare javascript assets */
     $prepareJs = function ($file, $name, $version = '') use ($escUrl) {
         wp_register_script($name, $escUrl . 'assets/' . $file, [], $version, true);
@@ -29,39 +30,39 @@ $registerAssets = function () use ($escPath, $escUrl) {
     /** prepare calculator assets */
     $prepareJs('vendor/bootstrap/js/bootstrap.bundle.min.js', 'esc-bootstrap', '4.1.3');
     $prepareJs('vendor/jquery-easing/jquery.easing.min.js', 'esc-jquery-easing', '1.0.0');
-    $prepareJs('js/raphael.min.js', 'esc-raphael', '2.3.0');
-    $prepareJs('js/mapael/jquery.mapael.min.js', 'esc-mapael', '1.0.0');
-    $prepareJs('js/mapael/maps/new_zealand.js', 'esc-mapael-map-nz', '1.0.0');
-    $prepareJs('js/stylish-portfolio.js', 'esc-portfolio', '1.0.0');
-    $prepareJs('js/stylish-portfolio.js', 'esc-portfolio', '1.0.0');
-    $prepareJs('js/defaults.js', 'esc-default', '1.0.0');
-    $prepareJs('js/esc-calculator.js', 'esc-calculator', '1.0.0');
+    $prepareJs('js/jquery-calx/jquery-calx-2.2.7.min.js', 'esc-jquery-calx', '2.2.7');
+    $prepareJs('js/jquery-calx/numeral.min.js', 'esc-numeral', '1.4.5');
+    $prepareJs('js/esc-calculator.js', 'esc-calculator', '1.0.2');
+    wp_register_script( 'esc-google-map', 'https://maps.googleapis.com/maps/api/js?key=' . $mapApiKey . '&callback=initMap', 'v3');
 
     $prepareCss('vendor/bootstrap/css/bootstrap.min.css', 'esc-css-bootstrap', '4.1.3');
-    $prepareCss('css/app.css', 'esc-css-app', '1.0.0');
+    $prepareCss('css/app.css', 'esc-css-app', '1.0.2');
 };
 
 
+add_action('wp_head', function() use ($escUrl) {
+    echo '<script>var escCalcDataUrl = "' . $escUrl . '/assets/js/esc_model.json?v=6";</script>';
+});
+
 add_shortcode(
     'esc_calculator',
-    function ($options) use ($registerAssets) {
+    function ($options) use ($escUrl, $registerAssets) {
         $registerAssets();
 
         wp_enqueue_script('esc-bootstrap');
         wp_enqueue_script('esc-jquery-easing');
-        wp_enqueue_script('esc-raphael');
-        wp_enqueue_script('esc-mapael');
-        wp_enqueue_script('esc-mapael-map-nz');
-        wp_enqueue_script('esc-portfolio');
-        wp_enqueue_script('esc-default');
+        wp_enqueue_script('esc-numeral');
+        wp_enqueue_script('esc-jquery-calx');
         wp_enqueue_script('esc-calculator');
+        wp_enqueue_script('esc-google-map');
 
         wp_enqueue_style('esc-css-bootstrap');
         wp_enqueue_style('esc-css-app');
 
         /** prepare view */
         ob_start();
-        require 'templates/index.php';
+
+        include 'templates/main.php';
 
         return ob_get_clean();
     }
