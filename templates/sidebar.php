@@ -1,13 +1,22 @@
-<a id="side-menu-toggle" class="rounded" href="#">
-    <i class="fas fa-bars"></i>
-</a>
-<!--<a id="result-toggle" class="rounded" href="#">
-    <i class="fas fa-poll"></i>
-</a>-->
+<div class="sidebar-nav" id="sidebar_nav">
+    <div class="sidebar-brand">
+        <span id="section_title">Erosion & Sediment Control</span>
+    </div>
+
+    <a id="side-menu-toggle" class="rounded" href="#">
+        <i class="fas fa-bars"></i>
+    </a>
+</div>
+
 <nav id="sidebar-wrapper">
     <ul class="sidebar-nav">
         <li class="sidebar-brand">
             <a href="#">Erosion & Sediment Control Calculator</a>
+        </li>
+        <li class="sidebar-nav-item">
+            <a class="btn-section" href="#esc_section_home">
+                <i class="fas fa-home px-2"></i> Home
+            </a>
         </li>
         <li class="sidebar-nav-item">
             <a class="btn-page" href="#esc_page_land_description">
@@ -48,7 +57,7 @@
             </a>
         </li>
         <li class="sidebar-nav-item">
-            <a class="btn-section" href="#esc_section_resource">
+            <a class="btn-section" href="#esc_section_resources">
                 <i class="fas fa-file px-2"></i> More Resources
             </a>
         </li>

@@ -3,7 +3,7 @@
     id="esc_page_sediment_control_measure"
     style="display:none;">
     <h2 class="page-title">Sediment Control Measures</h2>
-    <p class="lead mb-5 page-description">This is where you enter information about the Sediment control measures.</p>
+    <p class="lead mb-5 page-description">This is where you enter information about the sediment control measures.</p>
     <div class="text-left page-form">
         <hr>
         <div class="input-select">
@@ -32,7 +32,7 @@
         <div class="planting-view ml-4">
             <div class="input-number mt-3">
                 <label class="w-100">
-                    Buffer Slope (%) :
+                    Buffer Slope :
 
                     <span class="metric-options" style="float:right;">
                         <i class="btn btn-sm py-0 btn-dark" data-value="Degrees" data-target="D20" data-relate="C20">degrees</i>
@@ -50,10 +50,10 @@
             </div>
             <div class="input-number mt-3">
                 <label class="w-100">
-                    Estimated proportion of surface flow that drains through the strip :
+                    Channelisation factor :
                     <i class="fas fa-info-circle"
-                        data-toggle="popover" title="Channelization Factor"
-                        data-content="100% means no channelized flow through the strip. Values of less than 100% should be estimates of the percent of the buffer strip that is not being bypassed by channelized flow and is functioning normally."></i>
+                        data-toggle="popover" title="Channelisation Factor"
+                        data-content="100% means no channelised flow through the strip. Values of less than 100% should be estimates of the percent of the buffer strip that is not being bypassed by channelized flow and is functioning normally."></i>
                     <span style="float:right;"><b>percent</b></span>
                 </label>
                 <input type="text" class="form-control text-right etimated-input" placeholder="0" data-cell="C22">

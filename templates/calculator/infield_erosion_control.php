@@ -2,8 +2,8 @@
 <div class="col-lg-10 mx-auto esc-page esc-page-infield-erosion-control"
     id="esc_page_infield_erosion_control"
     style="display:none;">
-    <h2 class="page-title">Infield Erosion Control</h2>
-    <p class="lead mb-5 page-description">This is where you enter information about the Infield Erosion.</p>
+    <h2 class="page-title">Erosion Control Measures</h2>
+    <p class="lead mb-5 page-description">This is where you enter your actual or planned infield erosion control measures.</p>
     <div class="text-left page-form">
         <hr>
         <div class="input-select">

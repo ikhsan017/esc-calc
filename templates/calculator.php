@@ -1,12 +1,3 @@
-<!-- Navigation -->
-<?php include 'calculator/sidebar.php' ?>
-
-<div class="sidebar-nav">
-    <li class="sidebar-brand">
-        <a class="js-scroll-trigger" href="#page-top">Erosion & Sediment Control</a>
-    </li>
-</div>
-
 <div class="container text-center">
     <div class="row">
         <?php include 'calculator/land_description.php' ?>

@@ -1,5 +1,3 @@
-@import url("https://use.fontawesome.com/releases/v5.6.3/css/all.css");
-
 .esc-app{
     position: relative;
     overflow: hidden;
@@ -46,9 +44,10 @@
 }
 .esc-app .esc-section-home .home-header h1, .esc-app .esc-section-home .home-header h3 {
     color: white;
+    font-weight: 600;
 }
 .esc-app .esc-section-home .home-content {
-    background: url('../img/background.jpg') 0 0 no-repeat;
+    background: url('../img/background-min.jpg') 0 0 no-repeat;
     background-position: center;
     background-size: cover;
     height: 600px;
@@ -142,7 +141,9 @@
   background: #548235;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
-
+#sidebar_nav {
+    display: none
+}
 .esc-app .sidebar-nav {
   position: absolute !important;
   top: 0;
@@ -180,6 +181,7 @@
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 15px;
+  color: white
 }
 
 .esc-app .sidebar-nav > .sidebar-brand a {
