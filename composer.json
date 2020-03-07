@@ -1,0 +1,27 @@
+{
+    "name": "xsanisty/esc-calculator",
+    "description": "Silverstripe module for esc-calculator",
+    "type": "silverstripe-vendormodule",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Xsanisty",
+            "email": "developers@xsanisty.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4" : {
+            "Xsanisty\\" : "src/"
+        }
+    },
+    "extra": {
+        "installer-name" : "esc-calculator",
+		"expose": [
+			"assets"
+		]
+    },
+    "require": {
+        "silverstripe/framework": "^4.0"
+    }
+}
