@@ -1,4 +1,4 @@
-##Installation
+## Installation
 
 add following line to your silverstripe's ```composer.json``` in ```repositories``` section
 
@@ -20,3 +20,11 @@ and require the module
 ```
 
 then run composer update
+
+## Implementation
+
+You can add the calculator inside any page using the following shortcode
+
+```
+[esc_calculator mapApiKey='your_google_map_api_key']
+```
