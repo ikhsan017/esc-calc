@@ -84,7 +84,7 @@ jQuery(document).ready(function ($) {
 
     $('#esc_app').on('click', '.btn-section', function(e) {
         e.preventDefault();
-        var target = $(this).attr('href').replace('/', '');
+        var target = $(this).attr('data-target').replace('/', '');
 
         if (target == '#esc_section_home') {
             $('#sidebar_nav').hide();
@@ -105,7 +105,7 @@ jQuery(document).ready(function ($) {
 
     $('.esc-app').on('click', '.btn-page', function(e) {
         e.preventDefault();
-        var target = $(this).attr('href').replace('/', '');
+        var target = $(this).attr('data-target').replace('/', '');
 
         $('#esc_section_calculator').find('.esc-page:visible').fadeOut(300, function(){
             $(target).fadeIn();
