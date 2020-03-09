@@ -15,7 +15,7 @@ and require the module
 
 ```
 "require" : {
-    "xsanisty/esc-calculator" : "dev-silverstripe"
+    "xsanisty/esc-calculator" : "dev-silverstripe3"
 }
 ```
 
