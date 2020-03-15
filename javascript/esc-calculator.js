@@ -147,7 +147,7 @@ jQuery(document).ready(function ($) {
 
         if (element.hasClass('btn-light')) {
             $('.metric-options').children().removeClass('btn-dark').addClass('btn-light');
-            element.addClass('btn-dark');
+            element.addClass('btn-dark').removeClass('btn-light');
         }
 
         /*
