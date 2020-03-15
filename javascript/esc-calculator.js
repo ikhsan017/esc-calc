@@ -242,9 +242,12 @@ jQuery(document).ready(function ($) {
 
         pdf.text(45, currentLine, 'Land Description');
         pdf.line(40, currentLine+5, 280, currentLine+5);
+
+        /*
         pdf.text(305, currentLine, 'Land Location');
         pdf.line(300, currentLine+5, 550, currentLine+5);
         pdf.addImage($('#new_zealand_static_map')[0], 'PNG', 310, currentLine + 15, 230, 230/704 * 800);
+        */
 
         //c4-c7
         pdf.setTextColor(90,90,90);
