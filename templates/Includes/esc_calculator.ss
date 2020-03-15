@@ -29,8 +29,8 @@
                     <label class="w-100" for="slope">
                         Slope :
                         <span class="metric-options" style="float:right;">
-                            <i class="btn btn-sm py-0 btn-dark" data-value="Degrees" data-target="B5" data-relate="C5">degrees</i>
-                            <i class="btn btn-sm py-0 btn-light" data-value="Percent" data-target="B5" data-relate="C5">percent</i>
+                            <i class="btn btn-xs py-0 btn-dark" data-value="Degrees" data-target="B5" data-relate="C5">degrees</i>
+                            <i class="btn btn-xs py-0 btn-light" data-value="Percent" data-target="B5" data-relate="C5">percent</i>
                         </span>
                     </label>
                     <input type="text" class="form-control text-right slope-input" placeholder="0" data-cell="C5" id="slope">
@@ -164,8 +164,8 @@
                             Buffer Slope :
 
                             <span class="metric-options" style="float:right;">
-                                <i class="btn btn-sm py-0 btn-dark" data-value="Degrees" data-target="D20" data-relate="C20">degrees</i>
-                                <i class="btn btn-sm py-0 btn-light" data-value="Percent" data-target="D20" data-relate="C20">percent</i>
+                                <i class="btn btn-xs py-0 btn-dark" data-value="Degrees" data-target="D20" data-relate="C20">degrees</i>
+                                <i class="btn btn-xs py-0 btn-light" data-value="Percent" data-target="D20" data-relate="C20">percent</i>
                             </span>
                         </label>
                         <input type="text" class="form-control text-right buffer-input" placeholder="0" data-cell="C20">
