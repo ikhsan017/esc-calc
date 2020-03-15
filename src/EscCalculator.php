@@ -22,9 +22,6 @@ class EscCalculator
         Requirements::javascript(ESC_CALC_PATH . '/javascript/esc-calculator.js');
         Requirements::javascript('https://maps.googleapis.com/maps/api/js?key=' . $this->mapApiKey . '&callback=initMap');
 
-
-        Requirements::css(ESC_CALC_PATH . '/css/vendor/bootstrap/css/bootstrap.min.css');
-        Requirements::css(ESC_CALC_PATH . '/css/vendor/fontawesome/css/fontawesome.min.css');
         Requirements::css(ESC_CALC_PATH . '/css/app.css');
     }
 
