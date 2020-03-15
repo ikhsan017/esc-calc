@@ -5,14 +5,24 @@
 .esc-app, .esc-app h1, .esc-app h2, .esc-app h3, .esc-app h4{
     font-family : -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
 }
-.esc-section {
+
+.esc-app label{
+    display: block;
+    margin: 8px 0 5px;
+}
+
+.esc-app label .btn{
+    margin-bottom: 4px;
+}
+
+.esc-app .esc-section {
     transition: all 0.4s ease;
     width: 100%;
 }
-.esc-section.open {
+.esc-app .esc-section.open {
     display: block;
 }
-.esc-section.close {
+.esc-app .esc-section.close {
     display: none;
 }
 .esc-app .btn-xl {
@@ -128,7 +138,7 @@
 }
 
 /* Side Menu */
-#sidebar-wrapper {
+.esc-app #sidebar-wrapper {
   position: absolute;
   z-index: 2;
   right: 0;
@@ -143,7 +153,7 @@
   background: #548235;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
-#sidebar_nav {
+.esc-app #sidebar_nav {
     display: none
 }
 .esc-app .sidebar-nav {
@@ -200,7 +210,7 @@
   background: none;
 }
 
-#sidebar-wrapper.active {
+.esc-app #sidebar-wrapper.active {
   right: 100%;
   width: 100%;
   -webkit-transition: all 0.4s ease 0s;
@@ -291,6 +301,8 @@
 
 .esc-app .btn-dark {
   color: #fff !important;
+  background: #343a40;
+  border-color: #343a40;
 }
 
 .esc-app .btn {
