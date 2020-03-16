@@ -69,7 +69,7 @@ jQuery(document).ready(function ($) {
         $(this).toggleClass("active");
     });
 
-    $('[data-toggle="popover"]').popover();
+    $('[data-toggle="popover"]').popover({container: 'body'});
 
     $("html").on("mouseup", function (e) {
         var l = $(e.target);

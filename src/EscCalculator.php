@@ -13,7 +13,6 @@ class EscCalculator
     protected function prepareAssets()
     {
         Requirements::javascript(ESC_CALC_PATH . '/javascript/vendor/jquery/jquery.min.js');
-        Requirements::javascript(ESC_CALC_PATH . '/javascript/vendor/bootstrap/js/bootstrap.bundle.min.js');
         Requirements::javascript(ESC_CALC_PATH . '/javascript/vendor/jquery-easing/jquery.easing.min.js');
         Requirements::javascript(ESC_CALC_PATH . '/javascript/jquery-calx/numeral.min.js');
         Requirements::javascript(ESC_CALC_PATH . '/javascript/jquery-calx/jquery-calx-2.2.7.min.js');

@@ -1,7 +1,7 @@
-<div class="container text-center">
+<div class="container-fluid text-center">
     <div class="row">
         <!-- esc-Page esc-1 -->
-        <div class="col-lg-10 mx-auto esc-page esc-page-description" id="esc_page_land_description" style="display:block;">
+        <div class="col-lg-10 col-lg-offset-1 mx-auto esc-page esc-page-description" id="esc_page_land_description" style="display:block;">
             <h2 class="page-title">Land Description</h2>
             <p class="lead mb-5 page-description">
                 This is where you enter information about the land.
@@ -58,7 +58,7 @@
         </div>
 
         <!-- esc-Page esc-2 -->
-        <div class="col-lg-10 mx-auto esc-page esc-page-location" id="esc_page_land_location" style="display:none;">
+        <div class="col-lg-10 col-lg-offset-1 mx-auto esc-page esc-page-location" id="esc_page_land_location" style="display:none;">
             <h2 class="page-title">Land Location</h2>
             <p class="lead mb-5 page-description">Click on the map to add marker to the land location.</p>
             <div class="text-left page-form">
@@ -84,7 +84,7 @@
         </div>
 
         <!-- esc-Page esc-3 -->
-        <div class="col-lg-10 mx-auto esc-page esc-page-infield-erosion-control"
+        <div class="col-lg-10 col-lg-offset-1 mx-auto esc-page esc-page-infield-erosion-control"
             id="esc_page_infield_erosion_control"
             style="display:none;">
             <h2 class="page-title">Erosion Control Measures</h2>
@@ -128,7 +128,7 @@
         </div>
 
         <!-- esc-Page esc-4 -->
-        <div class="col-lg-10 mx-auto esc-page esc-page-sediment-control-measure"
+        <div class="col-lg-10 col-lg-offset-1 mx-auto esc-page esc-page-sediment-control-measure"
             id="esc_page_sediment_control_measure"
             style="display:none;">
             <h2 class="page-title">Sediment Control Measures</h2>
@@ -138,7 +138,7 @@
                 <div class="input-select">
                     <label for="sediment_retention_pond">
                         Sediment Retention Pond :
-                        <i class="fas fa-info-circle" data-toggle="popover"
+                        <i class="fa fa-fw fa-info-circle" data-toggle="popover"
                             title="Retention Pond"
                             data-content="Retention ponds should be a minimum size of 0.5% (50m³/ha)">
                         </i>
@@ -180,7 +180,7 @@
                     <div class="input-number mt-3">
                         <label class="w-100">
                             Channelisation factor :
-                            <i class="fas fa-info-circle"
+                            <i class="fa fa-fw fa-info-circle"
                                 data-toggle="popover" title="Channelisation Factor"
                                 data-content="100% means no channelised flow through the strip. Values of less than 100% should be estimates of the percent of the buffer strip that is not being bypassed by channelized flow and is functioning normally."></i>
                             <span style="float:right;"><b>percent</b></span>
@@ -197,7 +197,7 @@
         </div>
 
         <!-- esc-Page esc-5 -->
-        <div class="col-lg-10 mx-auto esc-page esc-page-result" id="esc_page_result" style="display:none;">
+        <div class="col-lg-10 col-lg-offset-1 mx-auto esc-page esc-page-result" id="esc_page_result" style="display:none;">
             <h2 class="page-title">Results</h2>
             <div class="text-left page-form">
                 <div class="text-left page-form">
@@ -217,7 +217,7 @@
                             <tr>
                                 <th scope="col" style="font-size: 12px; text-align: center;">
                                     Baseline
-                                    <i class="fas fa-info-circle"
+                                    <i class="fa fa-fw fa-info-circle"
                                         data-toggle="popover" title="Baseline result"
                                         data-content="No mitigation measures"></i>
                                 </th>
