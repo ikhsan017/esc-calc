@@ -19,6 +19,6 @@
 
     <hr>
     <div class="page-buttons text-center">
-        <a class="btn btn-primary btn-xl btn-section" href="#esc_section_home">Ok</a>
+        <a class="btn btn-primary btn-xl btn-section" href="#" data-target="#esc_section_home">Ok</a>
     </div>
 </div>
