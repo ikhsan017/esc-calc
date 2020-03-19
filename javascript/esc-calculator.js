@@ -280,7 +280,7 @@ jQuery(document).ready(function ($) {
         pdf.text(180 , currentLine, ': ' + parseFloat(getValue('C9')).toFixed(3));
 
         // In field erosion control
-        newLine(25);
+        newLine(15);
         pdf.setTextColor(84, 130, 53);
         pdf.setFontSize(12);
 
