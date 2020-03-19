@@ -17,6 +17,7 @@ class EscCalculator
         Requirements::javascript(ESC_CALC_PATH . '/javascript/jquery-calx/numeral.min.js');
         Requirements::javascript(ESC_CALC_PATH . '/javascript/jquery-calx/jquery-calx-2.2.7.min.js');
         Requirements::javascript(ESC_CALC_PATH . '/javascript/jspdf.min.js');
+        Requirements::javascript(ESC_CALC_PATH . '/javascript/jspdf.autotable.min.js');
         Requirements::javascript(ESC_CALC_PATH . '/javascript/esc-model.js');
         Requirements::javascript(ESC_CALC_PATH . '/javascript/esc-calculator.js');
         Requirements::javascript('https://maps.googleapis.com/maps/api/js?key=' . $this->mapApiKey . '&callback=initMap');

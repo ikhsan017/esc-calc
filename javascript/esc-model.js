@@ -19,7 +19,7 @@ var esc_model = {
         "C25": {"format" : "0.0", "formula": "K20"},
         "C26": {"format" : "0,0.0", "formula": "C25*E26"},
         "C27": {"format" : "0.0 %", "formula": "1-(C25\/K14)"},
-        "C29": {"format" : "0[.]00 %", "formula": "VLOOKUP(C17,J4:L8,3,FALSE)"},
+        "C29": {"format" : "0.0 %", "formula": "VLOOKUP(C17,J4:L8,3,FALSE)"},
 
         "Q15": {"value": "Sand"},
         "Q16": {"value": "Loamy sand"},

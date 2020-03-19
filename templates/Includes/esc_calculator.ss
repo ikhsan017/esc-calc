@@ -278,13 +278,28 @@
                         </tbody>
                     </table>
                 </div>
-                <hr>
-                <div class="input-select mt-3" id="sediment_pond_reduction">
-                    <label>Reduction of suspended sediment by sediment pond</label>
-                    <input type="text" class="form-control result-reduction-2 text-right" disabled data-cell="C29">
-                </div>
-                <hr>
                 -->
+                <hr>
+                <div class="input-select mt-3" id="sediment_pond_reduction" style="display:none">
+                    <label>Reduction of suspended sediment by sediment pond</label>
+                    <table class="table table-striped table-sm result-rate w-100">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="font-size: 12px; text-align: center;">Reduction</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="text-align: center;">
+                                    <span class="badge badge-light">
+                                        <span class="table-reduction" data-cell="C29"></span>
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr>
+                </div>
 
             </div>
             <hr>

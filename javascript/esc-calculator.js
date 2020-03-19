@@ -69,7 +69,9 @@ jQuery(document).ready(function ($) {
         $(this).toggleClass("active");
     });
 
-    $('[data-toggle="popover"]').popover({container: 'body'});
+    if ($().popover) {
+        $('[data-toggle="popover"]').popover({container: 'body'});
+    }
 
     $("html").on("mouseup", function (e) {
         var l = $(e.target);
@@ -339,42 +341,85 @@ jQuery(document).ready(function ($) {
 
 
         /** draw the header */
-        newLine(40);
+        newLine(25);
         pdf.setTextColor(84, 130, 53);
         pdf.setFontSize(22);
         pdf.text(260, currentLine, 'Results');
 
-        newLine(25);
+        newLine(15);
         pdf.setFontSize(12);
 
         pdf.text(45, currentLine, 'Rate of  Soil Erosion');
         pdf.line(40, currentLine+5, 550, currentLine+5);
 
-        newLine();
+        newLine(-5);
 
-        pdf.setTextColor(90,90,90);
-        pdf.setFontSize(10);
-        pdf.text(60, currentLine, 'Baseline');
-        pdf.text(200, currentLine, 'Reduction');
-        pdf.text(360, currentLine, 'Mitigated');
-        pdf.text(500, currentLine, 'P Loss');
+        pdf.autoTable({
+            startY : currentLine,
+            head: [
+                ['Baseline', 'Reduction', 'Mitigated', 'P Loss']
+            ],
+            headStyles: {
+                fillColor: [84, 130, 53],
+                textColor: [250, 250, 250],
+                halign: 'center',
+                fontSize: 10
+            },
 
-        newLine();
-        pdf.setFontSize(16);
-        pdf.setTextColor(84, 130, 53);
+            body: [
+              [getValue('K14'), getValue('C27'), getValue('C25'), getValue('C26')]
+            ],
+            bodyStyles: {
+                fillColor: [250, 250, 250],
+                textColor: [84, 130, 53],
+                halign: 'center',
+                fontSize: 16
+            },
 
-        pdf.text(62, currentLine, getValue('K14'));
-        pdf.text(207, currentLine, getValue('C27'));
-        pdf.text(363, currentLine, getValue('C25'));
-        pdf.text(505, currentLine, getValue('C26'));
+            foot: [
+                ['t/ha/year', '', 't/ha/year', 'kgP/ha/year']
+            ],
+            footStyles: {
+                fillColor: [250, 250, 250],
+                textColor: [70, 70, 70],
+                halign: 'center',
+                fontSize: 8
+            }
+        });
 
-        newLine();
-        pdf.setTextColor(70, 70, 70);
-        pdf.setFontSize(8);
-        pdf.text(63, currentLine, 't/ha/year');
-        //pdf.text(200, currentLine, '%');
-        pdf.text(365, currentLine, 't/ha/year');
-        pdf.text(495, currentLine, 'kgP/ha/year');
+        if (getValue('C17') != 'No') {
+            newLine(85);
+            pdf.setTextColor(84, 130, 53);
+            pdf.setFontSize(12);
+
+            pdf.text(45, currentLine, 'Reduction of suspended sediment by sediment pond');
+            pdf.line(40, currentLine+5, 550, currentLine+5);
+
+            newLine(-5);
+
+            pdf.autoTable({
+                startY : currentLine,
+                head: [
+                    ['Reduction']
+                ],
+                headStyles: {
+                    fillColor: [84, 130, 53],
+                    textColor: [250, 250, 250],
+                    halign: 'center',
+                    fontSize: 10
+                },
+
+                body: [
+                  [getValue('C29')]
+                ],
+                bodyStyles: {
+                    fillColor: [250, 250, 250],
+                    textColor: [84, 130, 53],
+                    halign: 'center',
+                    fontSize: 16
+                }
+            });
+        }
 
         /** footer */
         pdf.line(20, 790, 570, 790);
