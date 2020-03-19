@@ -225,7 +225,7 @@ jQuery(document).ready(function ($) {
         pdf.setDrawColor(150,150,150);
         pdf.setTextColor(90,90,90);
 
-        newLine(20);
+        newLine(10);
         pdf.text(40, currentLine, 'Paddock Name : ' + paddock);
         var today = new Date();
         var months = [
@@ -239,7 +239,7 @@ jQuery(document).ready(function ($) {
 
         pdf.text(40, currentLine, 'Paddock Name : ' + paddock);
 
-        newLine(25);
+        newLine(15);
         pdf.setTextColor(84, 130, 53);
 
         pdf.text(45, currentLine, 'Land Description');
@@ -307,7 +307,7 @@ jQuery(document).ready(function ($) {
         pdf.text(180, currentLine, ': ' + getValue('C14'));
 
         /** Sediment Control Measure */
-        newLine(25);
+        newLine(15);
         pdf.setTextColor(84, 130, 53);
         pdf.setFontSize(12);
 
@@ -341,7 +341,7 @@ jQuery(document).ready(function ($) {
 
 
         /** draw the header */
-        newLine(25);
+        newLine(15);
         pdf.setTextColor(84, 130, 53);
         pdf.setFontSize(22);
         pdf.text(260, currentLine, 'Results');
