@@ -319,7 +319,7 @@ jQuery(document).ready(function ($) {
 
         newLine();
         pdf.text(45, currentLine, 'Sediment Retention Pond');
-        pdf.text(180, currentLine, ': ' + getValue('C17'));
+        pdf.text(180, currentLine, ': ' + (getValue('C17') * 100) + ' %');
 
         newLine();
         pdf.text(45, currentLine, 'Vegetated Buffer Strips');
