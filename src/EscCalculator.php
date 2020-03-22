@@ -12,7 +12,6 @@ class EscCalculator
 
     protected function prepareAssets()
     {
-        Requirements::javascript(ESC_CALC_PATH . '/javascript/vendor/jquery/jquery.min.js');
         Requirements::javascript(ESC_CALC_PATH . '/javascript/vendor/jquery-easing/jquery.easing.min.js');
         Requirements::javascript(ESC_CALC_PATH . '/javascript/jquery-calx/numeral.min.js');
         Requirements::javascript(ESC_CALC_PATH . '/javascript/jquery-calx/jquery-calx-2.2.7.min.js');
@@ -22,6 +21,8 @@ class EscCalculator
         Requirements::javascript(ESC_CALC_PATH . '/javascript/esc-calculator.js');
         Requirements::javascript('https://maps.googleapis.com/maps/api/js?key=' . $this->mapApiKey . '&callback=initMap');
 
+
+        Requirements::css(ESC_CALC_PATH . '/css/bootstrap.css');
         Requirements::css(ESC_CALC_PATH . '/css/app.css');
     }
 
